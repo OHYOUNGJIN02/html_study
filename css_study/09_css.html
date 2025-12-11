@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(255, 255, 255);
+            align-items: center;
+            font-size: 20px;
+        }
+    .fixed{
+        position : fixed;
+        width: 100%;
+        height: 20px;
+        top: 0px;
+        opacity: 0.8;
+        background: #fff;
+        padding: 20px;
+        display: inline;
+        flex-direction: column;
+}
+
+    .fixed > span{
+        
+    font-weight: 700;
+        }
+    .search {
+        width: 100%;
+        height: 100px;
+        background-color: #feffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .help{
+        align-items: center;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+    
+    }
+
+    .searchbox {
+    position: relative;
+    width: 40%;
+    height: 70px;
+    background-color: #fff;
+    border: 3px solid #030303;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+
+    box-sizing: border-box;
+}
+
+
+    .box1 {
+        width: 100%;
+        height: 50px;
+        font-size: 25px;
+        align-items: baseline;
+        font-weight: bold;}
+
+    .menu {
+        width: 100%;
+        height: 120px;
+        background-color: #f0eeee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }.menu2 {
+        width: 100%;
+        height: 150px;
+        background-color: #f0eeee;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        
+    }
+
+    .menuitem {
+        width: 50px;
+        height: 50px;
+        background-color: #f0eeee;
+        justify-content: center;
+        font-size: 13px;
+    }
+    .menuitemName {
+        justify-content: center;
+        font-size: 10px;
+    }
+    body {
+    background: #ffffff;
+    padding: 30px;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+.menu-item2 {
+    color: #777;
+    cursor: pointer;
+}
+
+.menu-item.active {
+    font-weight: bold;
+    color: black;
+    border-bottom: 3px solid black;
+    padding-bottom: 6px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.faq-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid #ebeaea;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-container-2 {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content:center;
+    gap: 243px;
+}
+
+.etc-card {
+    display: inline;
+    background-color: #f0eeee;
+    width: 100%;
+    height: 175px;
+    border-radius: 20px;
+    border: 2px solid #0000000A;
+    justify-content:center;
+
+    
+    }
+
+.etc-name {
+    text-align:center;
+    display:inline;
+    font-weight: bold;
+    font-size : 20px;
+    margin-top: 20px;}
+
+.etc-content {
+    text-align: center;
+    font-size:15px;
+    margin-bottom: 10px;}
+
+.etc-button {
+    text-align: center;
+    justify-content: center;
+    width: 435px;
+    height:30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 2px solid #0000000A;
+    font-size: 15px;
+    margin-bottom:10px;
+    margin-left: 160px;
+    
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.icon2 {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 10px;}
+
+.servicename {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.question {
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.tags span {
+    background: #f0f0f0;
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+
+</style>
+</head>
+<body> 
+    <div class="fixed">kakao 
+        <span>고객센터</span>
+    </div>
+    <div class="help">카카오톡 고객센터 무엇을 도와드릴까요? <img src="https://cs.kakao.com/images/7b9584a246c571a779fd317e7b44601c/ico_jordi.png"
+     width="50"
+     height="50"
+     alt="카카오톡이미지" /></div>
+    <div class="search"> 
+    <div class="searchbox"> 궁금하신 점을 검색해보세요. </div>
+    <div class="servicebox"></div>
+</div>
+    <div class="box1">서비스별 고객센터</div>
+<li class="menu"> 
+    <ul class="menuitem"><img src="https://k.kakaocdn.net/www-img/dn/bAOgHGHzZxY/BcaXlcWV1fewmtkQtwoJpk/lkageGyH3oS.png"
+     width="50"
+     height="50"
+     alt="카카오톡이미지" />카카오톡</ul>
+    <ul class="menuitem"><img src="https://k.kakaocdn.net/www-img/dn/bAOj3WUDdKK/WognIov25fjRVuxVke9Mok/lkageCdnSz5.png"
+     width="50"
+     height="50"
+     alt="카카오 계정 이미지" />카카오 계정</ul>
+    <ul class="menuitem"><img src="https://k.kakaocdn.net/www-img/dn/bAPOL4uHiSR/vm1BzYYrVS6PbesJI3Cm20/lkage46RMxC.png"
+     width="50"
+     height="50"
+     alt="카카오 이모티콘 이미지" />카카오 이모티콘</ul>
+    <ul class="menuitem"><img src="https://k.kakaocdn.net/www-img/dn/bAOgHIrRoSY/E38ts00Zv9mJbQAAdnHEaK/lkaget4Ha9x.png"
+     width="50"
+     height="50"
+     alt="카카오톡 지갑 이미지" />카카오톡 지갑</ul>
+    <ul class="menuitem"><img src="https://k.kakaocdn.net/www-img/dn/bAPOLZ1d7zQ/tJygNXoRPYraiVkkO4wumK/lkagekun5dJ.png"
+     width="50"
+     height="50"
+     alt="MY 구독 이미지" />MY 구독</ul>
+    <ul class="menuitem"><img src="https://k.kakaocdn.net/www-img/dn/bAOgHHmbvDS/KSeKtcc2sPKjFpjfF5efak/lkagearYWMs.png"
+     width="50"
+     height="50"
+     alt="카카오톡 선물하기 이미지" />카카오톡 선물하기</ul>
+</li>
+<li class="menu2">
+    <ul class="menuitem"><img src="https://k.kakaocdn.net/www-img/dn/bAOgHGgvBXr/yGwGfevpVcmof6gL64ojDk/lkageOd7jaV.png"
+     width="50"
+     height="50"
+     alt="카카오톡 비지니스 이미지" />카카오톡 비지니스</ul>
+    <ul class="menuitem"><img src="https://k.kakaocdn.net/www-img/dn/bAPOL4Ieuh3/VwGO8yblgMnMEKqhSmTVfK/lkagem1AXhS.png"
+     width="50"
+     height="50"
+     alt="카카오 맵 이미지" />카카오 맵</ul>
+    <ul class="menuitem"><img src="https://k.kakaocdn.net/www-img/dn/bAOgHD49OAO/ZWJPe6L28ckdJ13CWXifPk/lkageakfzXN.png"
+     width="50"
+     height="50"
+     alt="카카오톡 예약하기 이미지" />카카오톡 예약하기</ul>
+    <ul class="menuitem"><img src="https://k.kakaocdn.net/www-img/dn/bAOj3XTxwQM/Lkqxw7fo3cz8oyECKb7jS1/lkageenmxZe.png"
+     width="50"
+     height="50"
+     alt="카카오스토리 이미지" />카카오스토리</ul>
+    <ul class="menuitem"><img src="https://k.kakaocdn.net/www-img/dn/bAPOL3o1pgZ/1eA0zDM7oxalDowT5yiaGk/lkagesmKCUJ.png"
+     width="50"
+     height="50"
+     alt="카카오같이가치 이미지" />카카오같이가치</ul>
+    <ul class="menuitem"><img src="https://k.kakaocdn.net/www-img/dn/bAOgHIL98GQ/nNpxrdTUHcuiKQsbZCYf40/lkage0h2RoV.png"
+     width="50"
+     height="50"
+     alt="카카오 접근성 이미지" />카카오 접근성</ul>
+
+</li>
+<h2 class="title">자주 묻는 질문</h2>
+
+
+
+
+<div class="card-container">
+
+    <div class="faq-card">
+        <img src="https://k.kakaocdn.net/www-img/dn/bAOgHGHzZxY/BcaXlcWV1fewmtkQtwoJpk/lkageGyH3oS.png" class="icon">
+        <div class="service-name">카카오톡</div>
+        <div class="question">대화를 백업하고 복원하려면 어떻게 해야 하나요?</div>
+        <div class="tags">
+            <span>#백업</span><span>#복원</span>
+        </div>
+    </div>
+
+    <div class="faq-card">
+        <img src="https://k.kakaocdn.net/www-img/dn/bAOgHGHzZxY/BcaXlcWV1fewmtkQtwoJpk/lkageGyH3oS.png" class="icon">
+        <div class="service-name">카카오톡</div>
+        <div class="question">팀채팅이 무엇인가요?</div>
+        <div class="tags">
+            <span>#팀채팅</span><span>#채팅 관리</span>
+        </div>
+    </div>
+
+    <div class="faq-card">
+        <img src="https://k.kakaocdn.net/www-img/dn/bAOgHGHzZxY/BcaXlcWV1fewmtkQtwoJpk/lkageGyH3oS.png" class="icon">
+        <div class="service-name">카카오톡</div>
+        <div class="question">채팅방에서 나갈 때 '조용히 나가기' 옵션이 안 보여요.</div>
+        <div class="tags">
+            <span>#조용히 나가기</span><span>#채팅방 나가기</span>
+        </div>
+    </div>
+
+    <div class="faq-card">
+        <img src="https://k.kakaocdn.net/www-img/dn/bAPOLZ1d7zQ/tJygNXoRPYraiVkkO4wumK/lkagekun5dJ.png" class="icon">
+        <div class="service-name">카카오톡 지갑</div>
+        <div class="question">전자증명서는 어떤 기능인가요?</div>
+        <div class="tags">
+            <span>#전자증명서</span><span>#지갑</span>
+        </div>
+    </div>
+
+    
+    <div class="faq-card">
+        <img src="https://k.kakaocdn.net/www-img/dn/bAOgHGHzZxY/BcaXlcWV1fewmtkQtwoJpk/lkageGyH3oS.png" class="icon">
+        <div class="servicename">카카오톡</div>
+        <div class="question">추모 프로필이란 무엇인가요?</div>
+        <div class="tags">
+            <span>#추모프로필</span>
+        </div>
+    </div>
+
+    <div class="faq-card">
+        <img src="https://k.kakaocdn.net/www-img/dn/bAOgHGHzZxY/BcaXlcWV1fewmtkQtwoJpk/lkageGyH3oS.png" class="icon">
+        <div class="servicename">카카오톡</div>
+        <div class="question">새로운 카카오톡 채널은 어떻게 추가하나요?</div>
+        <div class="tags">
+            <span>#채널 추가</span>
+        </div>
+    </div>
+
+    <div class="faq-card">
+        <img src="https://k.kakaocdn.net/www-img/dn/bAPOLZ1d7zQ/tJygNXoRPYraiVkkO4wumK/lkagekun5dJ.png" class="icon">
+        <div class="servicename">카카오톡 지갑</div>
+        <div class="question">자격증을 어떻게 발급받을 수 있나요?</div>
+        <div class="tags">
+            <span>#디지털카드</span><span>#자격증</span>
+        </div>
+    </div>
+
+    <div class="faq-card">
+        <img src="https://k.kakaocdn.net/www-img/dn/bAOgHGHzZxY/BcaXlcWV1fewmtkQtwoJpk/lkageGyH3oS.png" class="icon">
+        <div class="servicename">카카오톡</div>
+        <div class="question">톡서랍 보안코드는 무엇인가요?</div>
+        <div class="tags">
+            <span>#톡서랍</span><span>#보안코드</span>
+        </div>
+    </div>
+
+</div>
+<div class="card-container-2">
+
+    <div class="etc-card">
+        <img src="https://cs.kakao.com/images/1b6c3b5217f7acff9f2477ca03f15c79/ico_mail.png" class="icon2">
+        <div class="etc-name">답을 찾지 못하셨나요?</div>
+        <div class="etc-content">메일로 상담직원에게 물어보세요.
+            꼼꼼히 확인하여 답변 드리겠습니다.</div>
+        <div class="etc-button">메일 문의하기</div>
+    </div>
+
+    <div class="etc-card">
+        <img src="https://cs.kakao.com/images/03bf8806c2e02440f7a19b1de1395e1f/ico_report.png" class="icon2">
+        <div class="etc-name">콘텐츠 신고가 필요하신가요?</div>
+        <div class="etc-content">카카오 신고센터를 통해 유해정보, 권리침해,
+            불법촬영물 등의 콘텐츠 신고를 하실 수 있습니다.</div>
+        <div class="etc-button">카카오 신고센터 바로가기</div>
+    </div>
+</div>
+
+</body>
+</html>
+
+    
+</body>
+</html>

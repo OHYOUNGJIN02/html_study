@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>크아악</title>
+<style>
+    *
+    #Container{
+     width: 1000px;
+     height:1000px;
+     background-color: rgb(170, 238, 193);
+     display: flex;
+     justify-content: space-between;
+     align-items : center;
+    }
+
+    
+    .search {
+        width: 100%;
+        height: 100px;
+        background-color: #a0e8ef;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .searchbox {
+        width: 60%;
+        height: 40px;
+        background-color: #fff;
+        border: 3px solid #c7ff58;
+        border-radius: 20px;
+    }
+
+    
+    .menu {
+        width: 100%;
+        height: 60px;
+        background-color: #7263ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .menuitem {
+        width: 40px;
+        height: 40px;
+        background-color: #9bb0e1;
+        border: 2px solid #555;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    
+    .main {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .left {
+        width: 60%;
+        background-color: #d0e6ff;
+        border: 5px solid #ce2727;
+        padding: 20px;
+    }
+
+    .right {
+        width: 25%;
+        height: 1000px;
+        background-color: #c5f45f;
+        border: 5px solid #ce2727;
+        margin-left: 20px;
+    }
+
+    
+    .topboxs {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+
+    .topbox {
+        flex: 1;
+        height: 120px;
+        background-color: #b0fff3;
+        border: 5px solid #4f58b9;
+    }
+
+    .underboxs {
+        display: flex;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .underbox{
+        flex: 1;
+        height: 120px;
+        background-color: #b0fff3;
+        border: 5px solid #4f58b9;
+    }
+
+    
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 150px);
+        gap: 20px;
+    }
+
+    .griditem {
+        background-color: #e4d6d6;
+        border: 5px solid #cf5c3f;
+    }
+</style>
+</head>
+<body>
+<div id="container">
+    <div class="search">
+    <div class="searchbox"></div>
+</div>
+<li class="menu">
+    <ul class="menuitem">블로그</ul>
+    <ul class="menuitem">카페</ul>
+    <ul class="menuitem">뉴스</ul>
+    <ul class="menuitem">메일</ul>
+    <ul class="menuitem">증권</ul>
+    <ul class="menuitem">웹툰</ul>
+</li>
+<div class="main">
+    <div class="left">
+
+        
+        <div class="topboxs">
+            <div class="topbox"></div>
+            <div class="topbox"></div>
+        </div>
+        <div class = "underboxs">
+            <div class = "underbox"></div>
+            <div class = "underbox"></div>
+        </div>
+        <div class="grid">
+            <div class="griditem"></div>
+            <div class="griditem"></div>
+            <div class="griditem"></div>
+            <div class="griditem"></div>
+        </div>
+    </div>
+    <div class="right"></div>
+</div>
+</div>
+    
+
+</body>
+</html>
