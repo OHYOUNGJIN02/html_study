@@ -38,7 +38,7 @@ console.log(names.pop())
 names.splice(1, 0, "오영진")
 console.log(names)
 
-names[0]="빠니찬익"
+names[0]="HOMEMAN"
 console.log(names)
 
 //요소 찾기 =>주어진 조건 함수를 만족하는 배열의 첫번째 요소를 반환
