@@ -57,4 +57,18 @@ const students = [
 
 console.log(students.find((student)=> student.name === "집가자" && student.age === 22))
 
+console.log(names.includes("집보내줘"))
+
+const numbers = [1,2,3,4,5]
+console.log(numbers.filter(n=>n % 2 === 0))
+console.log(students.filter(student => student.age > 22)) 
+console.log(students.map(student => 
+    {if(student.age === 21) 
+        { return { name: student.name,
+
+        };
+    }return student
+})
+) 
+
 
