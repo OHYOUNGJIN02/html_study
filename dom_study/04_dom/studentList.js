@@ -25,6 +25,6 @@ function loadStudentList() {
         .join("");
 
     const studentListUl = document.querySelector(".student_list");
-
+ 
     studentListUl.innerHTML = studentListHtml;
 }
