@@ -1,3 +1,5 @@
+// const { useState } = require("react")
+
 const student = {
     name : "오영진",
     age : 24,
@@ -124,3 +126,25 @@ console.log(discountProducts);
 
 //10%할인한 discountProducts배열을 만드세요
 
+//===================================================================================================
+
+ //value = 현재 상태, setValue = 수정할 수 있는 상태
+
+const useState = (data) => {
+  const dataState = {
+    data : data,
+    setData: (d) => {
+      console.log(d, "데이터 set");
+
+    },
+
+  };
+
+  return [dataState.data, dataState.setData]
+
+}
+
+const [value, setValue] = useState(10);
+console.log(value)
+setValue(20)
+console.log(value)
